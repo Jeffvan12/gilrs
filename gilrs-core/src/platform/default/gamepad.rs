@@ -146,4 +146,13 @@ pub mod native_ev_codes {
     pub const BTN_DPAD_DOWN: EvCode = EvCode(28);
     pub const BTN_DPAD_LEFT: EvCode = EvCode(29);
     pub const BTN_DPAD_RIGHT: EvCode = EvCode(30);
+
+    pub const BTN_TRIGGER_HAPPY1: EvCode = EvCode(31);
+    pub const BTN_TRIGGER_HAPPY2: EvCode = EvCode(32);
+    pub const BTN_TRIGGER_HAPPY3: EvCode = EvCode(33);
+    pub const BTN_TRIGGER_HAPPY4: EvCode = EvCode(34);
+    pub const BTN_TRIGGER_HAPPY5: EvCode = EvCode(35);
+    pub const BTN_TRIGGER_HAPPY6: EvCode = EvCode(36);
+    pub const BTN_TRIGGER_HAPPY7: EvCode = EvCode(37);
+    pub const BTN_TRIGGER_HAPPY8: EvCode = EvCode(38);
 }

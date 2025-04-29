@@ -462,7 +462,16 @@ pub mod native_ev_codes {
     pub const BTN_DPAD_LEFT: EvCode = EvCode(29);
     pub const BTN_DPAD_RIGHT: EvCode = EvCode(30);
 
-    pub(super) static BUTTONS: [EvCode; 17] = [
+    pub const BTN_TRIGGER_HAPPY1: EvCode = EvCode(31);
+    pub const BTN_TRIGGER_HAPPY2: EvCode = EvCode(32);
+    pub const BTN_TRIGGER_HAPPY3: EvCode = EvCode(33);
+    pub const BTN_TRIGGER_HAPPY4: EvCode = EvCode(34);
+    pub const BTN_TRIGGER_HAPPY5: EvCode = EvCode(35);
+    pub const BTN_TRIGGER_HAPPY6: EvCode = EvCode(36);
+    pub const BTN_TRIGGER_HAPPY7: EvCode = EvCode(37);
+    pub const BTN_TRIGGER_HAPPY8: EvCode = EvCode(38);
+
+    pub(super) static BUTTONS: [EvCode; 25] = [
         BTN_SOUTH,
         BTN_EAST,
         BTN_WEST,
@@ -480,6 +489,14 @@ pub mod native_ev_codes {
         BTN_DPAD_LEFT,
         BTN_DPAD_RIGHT,
         BTN_MODE,
+        BTN_TRIGGER_HAPPY1,
+        BTN_TRIGGER_HAPPY2,
+        BTN_TRIGGER_HAPPY3,
+        BTN_TRIGGER_HAPPY4,
+        BTN_TRIGGER_HAPPY5,
+        BTN_TRIGGER_HAPPY6,
+        BTN_TRIGGER_HAPPY7,
+        BTN_TRIGGER_HAPPY8,
     ];
 
     pub(super) static AXES: [EvCode; 4] = [AXIS_LSTICKX, AXIS_LSTICKY, AXIS_RSTICKX, AXIS_RSTICKY];

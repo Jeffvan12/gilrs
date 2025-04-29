@@ -671,7 +671,7 @@ mod tests {
                             h0.8,dpdown:h0.4,dpright:h0.2,leftx:a0,lefty:a1,rightx:a2,righty:a3,\
                             lefttrigger:a4,righttrigger:a5,";
 
-    const BUTTONS: [EvCode; 16] = [
+    const BUTTONS: [EvCode; 15] = [
         nec::BTN_SOUTH,
         nec::BTN_EAST,
         nec::BTN_C,
@@ -687,7 +687,6 @@ mod tests {
         nec::BTN_MODE,
         nec::BTN_LTHUMB,
         nec::BTN_RTHUMB,
-        nec::BTN_TRIGGER_HAPPY1,
     ];
 
     const AXES: [EvCode; 12] = [
@@ -734,6 +733,15 @@ mod tests {
         data.insert_btn(buttons[7], Button::DPadDown);
         data.insert_btn(buttons[8], Button::DPadLeft);
         data.insert_btn(buttons[9], Button::RightThumb);
+
+        data.insert_btn(buttons[10], Button::TriggerHappy1);
+        data.insert_btn(buttons[11], Button::TriggerHappy2);
+        data.insert_btn(buttons[12], Button::TriggerHappy3);
+        data.insert_btn(buttons[13], Button::TriggerHappy4);
+        data.insert_btn(buttons[14], Button::TriggerHappy5);
+        data.insert_btn(buttons[15], Button::TriggerHappy6);
+        data.insert_btn(buttons[16], Button::TriggerHappy7);
+        data.insert_btn(buttons[17], Button::TriggerHappy8);
 
         let (mappings, sdl_mappings) =
             Mapping::from_data(&data, &BUTTONS, &AXES, name, uuid).unwrap();
