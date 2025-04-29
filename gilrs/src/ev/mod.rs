@@ -138,6 +138,15 @@ pub enum Button {
     DPadDown = BTN_DPAD_DOWN,
     DPadLeft = BTN_DPAD_LEFT,
     DPadRight = BTN_DPAD_RIGHT,
+    // Happy Buttons
+    TriggerHappy1 = BTN_TRIGGER_HAPPY1,
+    TriggerHappy2 = BTN_TRIGGER_HAPPY2,
+    TriggerHappy3 = BTN_TRIGGER_HAPPY3,
+    TriggerHappy4 = BTN_TRIGGER_HAPPY4,
+    TriggerHappy5 = BTN_TRIGGER_HAPPY5,
+    TriggerHappy6 = BTN_TRIGGER_HAPPY6,
+    TriggerHappy7 = BTN_TRIGGER_HAPPY7,
+    TriggerHappy8 = BTN_TRIGGER_HAPPY8,
 
     #[default]
     Unknown = BTN_UNKNOWN,
@@ -146,7 +155,23 @@ pub enum Button {
 impl Button {
     pub fn is_action(self) -> bool {
         use crate::Button::*;
-        matches!(self, South | East | North | West | C | Z)
+        matches!(
+            self,
+            South
+                | East
+                | North
+                | West
+                | C
+                | Z
+                | TriggerHappy1
+                | TriggerHappy2
+                | TriggerHappy3
+                | TriggerHappy4
+                | TriggerHappy5
+                | TriggerHappy6
+                | TriggerHappy7
+                | TriggerHappy8
+        )
     }
 
     pub fn is_trigger(self) -> bool {
@@ -195,6 +220,14 @@ impl Button {
             Button::DPadDown => Some(necs::BTN_DPAD_DOWN),
             Button::DPadLeft => Some(necs::BTN_DPAD_LEFT),
             Button::DPadRight => Some(necs::BTN_DPAD_RIGHT),
+            Button::TriggerHappy1 => Some(necs::BTN_TRIGGER_HAPPY1),
+            Button::TriggerHappy2 => Some(necs::BTN_TRIGGER_HAPPY2),
+            Button::TriggerHappy3 => Some(necs::BTN_TRIGGER_HAPPY3),
+            Button::TriggerHappy4 => Some(necs::BTN_TRIGGER_HAPPY4),
+            Button::TriggerHappy5 => Some(necs::BTN_TRIGGER_HAPPY5),
+            Button::TriggerHappy6 => Some(necs::BTN_TRIGGER_HAPPY6),
+            Button::TriggerHappy7 => Some(necs::BTN_TRIGGER_HAPPY7),
+            Button::TriggerHappy8 => Some(necs::BTN_TRIGGER_HAPPY8),
             _ => None,
         }
         .map(Code)

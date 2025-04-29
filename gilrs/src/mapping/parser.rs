@@ -45,7 +45,7 @@ static AXES_SDL: [&str; 31] = [
     "y",
     "z",
 ];
-static AXES: [AxisOrBtn; 31] = [
+static AXES: [AxisOrBtn; 39] = [
     AxisOrBtn::Btn(Button::South),
     AxisOrBtn::Btn(Button::East),
     AxisOrBtn::Btn(Button::Select),
@@ -77,6 +77,14 @@ static AXES: [AxisOrBtn; 31] = [
     AxisOrBtn::Btn(Button::West),
     AxisOrBtn::Btn(Button::North),
     AxisOrBtn::Btn(Button::Z),
+    AxisOrBtn::Btn(Button::TriggerHappy1),
+    AxisOrBtn::Btn(Button::TriggerHappy2),
+    AxisOrBtn::Btn(Button::TriggerHappy3),
+    AxisOrBtn::Btn(Button::TriggerHappy4),
+    AxisOrBtn::Btn(Button::TriggerHappy5),
+    AxisOrBtn::Btn(Button::TriggerHappy6),
+    AxisOrBtn::Btn(Button::TriggerHappy7),
+    AxisOrBtn::Btn(Button::TriggerHappy8),
 ];
 
 pub struct Parser<'a> {

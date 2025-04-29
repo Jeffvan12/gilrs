@@ -341,6 +341,15 @@ pub mod native_ev_codes {
     pub const BTN_LTHUMB: EvCode = EvCode(nec::BTN_LTHUMB);
     pub const BTN_RTHUMB: EvCode = EvCode(nec::BTN_RTHUMB);
 
+    pub const BTN_TRIGGER_HAPPY1: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY1);
+    pub const BTN_TRIGGER_HAPPY2: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY2);
+    pub const BTN_TRIGGER_HAPPY3: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY3);
+    pub const BTN_TRIGGER_HAPPY4: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY4);
+    pub const BTN_TRIGGER_HAPPY5: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY5);
+    pub const BTN_TRIGGER_HAPPY6: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY6);
+    pub const BTN_TRIGGER_HAPPY7: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY7);
+    pub const BTN_TRIGGER_HAPPY8: EvCode = EvCode(nec::BTN_TRIGGER_HAPPY8);
+
     pub const BTN_DPAD_UP: EvCode = EvCode(nec::BTN_DPAD_UP);
     pub const BTN_DPAD_DOWN: EvCode = EvCode(nec::BTN_DPAD_DOWN);
     pub const BTN_DPAD_LEFT: EvCode = EvCode(nec::BTN_DPAD_LEFT);

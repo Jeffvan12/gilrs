@@ -97,6 +97,14 @@ impl Mapping {
             nec::BTN_DPAD_DOWN => Btn(Button::DPadDown),
             nec::BTN_DPAD_LEFT => Btn(Button::DPadLeft),
             nec::BTN_DPAD_RIGHT => Btn(Button::DPadRight),
+            nec::BTN_TRIGGER_HAPPY1 => Btn(Button::TriggerHappy1),
+            nec::BTN_TRIGGER_HAPPY2 => Btn(Button::TriggerHappy2),
+            nec::BTN_TRIGGER_HAPPY3 => Btn(Button::TriggerHappy3),
+            nec::BTN_TRIGGER_HAPPY4 => Btn(Button::TriggerHappy4),
+            nec::BTN_TRIGGER_HAPPY5 => Btn(Button::TriggerHappy5),
+            nec::BTN_TRIGGER_HAPPY6 => Btn(Button::TriggerHappy6),
+            nec::BTN_TRIGGER_HAPPY7 => Btn(Button::TriggerHappy7),
+            nec::BTN_TRIGGER_HAPPY8 => Btn(Button::TriggerHappy8),
 
             nec::AXIS_LT => Btn(Button::LeftTrigger),
             nec::AXIS_RT => Btn(Button::RightTrigger),
@@ -148,6 +156,14 @@ impl Mapping {
             nec::BTN_DPAD_LEFT,
             nec::BTN_DPAD_RIGHT,
             nec::BTN_DPAD_UP,
+            nec::BTN_TRIGGER_HAPPY1,
+            nec::BTN_TRIGGER_HAPPY2,
+            nec::BTN_TRIGGER_HAPPY3,
+            nec::BTN_TRIGGER_HAPPY4,
+            nec::BTN_TRIGGER_HAPPY5,
+            nec::BTN_TRIGGER_HAPPY6,
+            nec::BTN_TRIGGER_HAPPY7,
+            nec::BTN_TRIGGER_HAPPY8,
         ];
 
         for axis in &axes {
@@ -208,6 +224,31 @@ impl Mapping {
                     BTN_EAST => add_button("b", ev_code, Button::East)?,
                     BTN_WEST => add_button("x", ev_code, Button::West)?,
                     BTN_NORTH => add_button("y", ev_code, Button::North)?,
+                    BTN_TRIGGER_HAPPY1 => {
+                        add_button("triggerhappy1", ev_code, Button::TriggerHappy1)?
+                    }
+                    BTN_TRIGGER_HAPPY2 => {
+                        add_button("triggerhappy2", ev_code, Button::TriggerHappy2)?
+                    }
+                    BTN_TRIGGER_HAPPY3 => {
+                        add_button("triggerhappy3", ev_code, Button::TriggerHappy3)?
+                    }
+                    BTN_TRIGGER_HAPPY4 => {
+                        add_button("triggerhappy4", ev_code, Button::TriggerHappy4)?
+                    }
+                    BTN_TRIGGER_HAPPY5 => {
+                        add_button("triggerhappy5", ev_code, Button::TriggerHappy5)?
+                    }
+                    BTN_TRIGGER_HAPPY6 => {
+                        add_button("triggerhappy6", ev_code, Button::TriggerHappy6)?
+                    }
+                    BTN_TRIGGER_HAPPY7 => {
+                        add_button("triggerhappy7", ev_code, Button::TriggerHappy7)?
+                    }
+                    BTN_TRIGGER_HAPPY8 => {
+                        add_button("triggerhappy8", ev_code, Button::TriggerHappy8)?
+                    }
+
                     BTN_LT => add_button("leftshoulder", ev_code, Button::LeftTrigger)?,
                     BTN_RT => add_button("rightshoulder", ev_code, Button::RightTrigger)?,
                     BTN_LT2 => add_button("lefttrigger", ev_code, Button::LeftTrigger2)?,
@@ -630,7 +671,7 @@ mod tests {
                             h0.8,dpdown:h0.4,dpright:h0.2,leftx:a0,lefty:a1,rightx:a2,righty:a3,\
                             lefttrigger:a4,righttrigger:a5,";
 
-    const BUTTONS: [EvCode; 15] = [
+    const BUTTONS: [EvCode; 16] = [
         nec::BTN_SOUTH,
         nec::BTN_EAST,
         nec::BTN_C,
@@ -646,6 +687,7 @@ mod tests {
         nec::BTN_MODE,
         nec::BTN_LTHUMB,
         nec::BTN_RTHUMB,
+        nec::BTN_TRIGGER_HAPPY1,
     ];
 
     const AXES: [EvCode; 12] = [

@@ -28,6 +28,15 @@ pub const BTN_DPAD_DOWN: u16 = 17;
 pub const BTN_DPAD_LEFT: u16 = 18;
 pub const BTN_DPAD_RIGHT: u16 = 19;
 
+pub const BTN_TRIGGER_HAPPY1: u16 = 20;
+pub const BTN_TRIGGER_HAPPY2: u16 = 21;
+pub const BTN_TRIGGER_HAPPY3: u16 = 22;
+pub const BTN_TRIGGER_HAPPY4: u16 = 23;
+pub const BTN_TRIGGER_HAPPY5: u16 = 24;
+pub const BTN_TRIGGER_HAPPY6: u16 = 25;
+pub const BTN_TRIGGER_HAPPY7: u16 = 26;
+pub const BTN_TRIGGER_HAPPY8: u16 = 27;
+
 pub const AXIS_UNKNOWN: u16 = 0;
 
 pub const AXIS_LSTICKX: u16 = 1;

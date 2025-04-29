@@ -411,7 +411,7 @@ fn handle_inotify(
 }
 
 fn get_gamepad_path(name: &str) -> Option<(PathBuf, PathBuf)> {
-    let event_id =  name.strip_prefix("event")?;
+    let event_id = name.strip_prefix("event")?;
 
     if event_id.is_empty()
         || event_id
@@ -1182,6 +1182,15 @@ const BTN_DPAD_DOWN: u16 = 0x221;
 const BTN_DPAD_LEFT: u16 = 0x222;
 const BTN_DPAD_RIGHT: u16 = 0x223;
 
+const BTN_TRIGGER_HAPPY1: u16 = 0x2c0;
+const BTN_TRIGGER_HAPPY2: u16 = 0x2c1;
+const BTN_TRIGGER_HAPPY3: u16 = 0x2c2;
+const BTN_TRIGGER_HAPPY4: u16 = 0x2c3;
+const BTN_TRIGGER_HAPPY5: u16 = 0x2c4;
+const BTN_TRIGGER_HAPPY6: u16 = 0x2c5;
+const BTN_TRIGGER_HAPPY7: u16 = 0x2c6;
+const BTN_TRIGGER_HAPPY8: u16 = 0x2c7;
+
 const ABS_X: u16 = 0x00;
 const ABS_Y: u16 = 0x01;
 const ABS_Z: u16 = 0x02;
@@ -1280,7 +1289,38 @@ pub mod native_ev_codes {
         kind: EV_KEY,
         code: super::BTN_DPAD_RIGHT,
     };
-
+    pub const BTN_TRIGGER_HAPPY1: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY1,
+    };
+    pub const BTN_TRIGGER_HAPPY2: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY2,
+    };
+    pub const BTN_TRIGGER_HAPPY3: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY3,
+    };
+    pub const BTN_TRIGGER_HAPPY4: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY4,
+    };
+    pub const BTN_TRIGGER_HAPPY5: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY5,
+    };
+    pub const BTN_TRIGGER_HAPPY6: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY6,
+    };
+    pub const BTN_TRIGGER_HAPPY7: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY7,
+    };
+    pub const BTN_TRIGGER_HAPPY8: EvCode = EvCode {
+        kind: EV_KEY,
+        code: super::BTN_TRIGGER_HAPPY8,
+    };
     pub const AXIS_LSTICKX: EvCode = EvCode {
         kind: EV_ABS,
         code: super::ABS_X,
